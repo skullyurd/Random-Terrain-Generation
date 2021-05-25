@@ -5,7 +5,6 @@ using UnityEngine;
 public class TerrainScape : Landscape
 {
     private Terrain t;
-
     private void Start()
     {
         t = GetComponent<Terrain>();
@@ -22,6 +21,5 @@ public class TerrainScape : Landscape
         Debug.Log(message: "Adding Heights");
         t.terrainData.heightmapResolution = procedulManager.instance.terrain.Size;
         t.terrainData.SetHeights(0,0,procedulManager.instance.terrain.heights);
-
     }
 }

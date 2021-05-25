@@ -5,10 +5,10 @@ using UnityEngine.Events;
 
 public class procedulManager : MonoBehaviour
 {
-
-    public static procedulManager instance;
     private int seed;
     private float perlinSeed;
+
+    public static procedulManager instance;
     public ProceduralTerrain terrain;
     public UnityEvent Regenerate;
 

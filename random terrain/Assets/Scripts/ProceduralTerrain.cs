@@ -50,6 +50,7 @@ public class ProceduralTerrain
     //        init();
     //    }
     //}
+
         public int Size
         {
             get { return size; }
@@ -59,6 +60,7 @@ public class ProceduralTerrain
                 init();
             }
         }
+
     //public float Detail
     //{
     //    get { return detail; }
@@ -99,7 +101,6 @@ public class ProceduralTerrain
         this.detail = detail;
         this.seed = seed;
         this.type = type;
-       
     }
 
     public void init()
@@ -141,6 +142,7 @@ public class ProceduralTerrain
                         //height = UnityEngine.Mathf.Sin(x);
                         break;
 
+                        //Calculations that were made for fun. The test cases aren't made for serious purposes
                     case genType.TEST1:
                         height = UnityEngine.Mathf.Sin(maxHeight - z * detail / x);
                         break;
@@ -156,7 +158,6 @@ public class ProceduralTerrain
 
                 heights[x, z] = height;
 
-
                 /*Vector3 posz = new Vector3(x, Mathf.Floor(r), z) + transform.position;
                 GameObject spawnCube = Instantiate(prefab, transform.position + posz, Quaternion.identity, transform);
 
@@ -166,6 +167,4 @@ public class ProceduralTerrain
         }
         Debug.Log("World Generated");
     }
-
-
 }

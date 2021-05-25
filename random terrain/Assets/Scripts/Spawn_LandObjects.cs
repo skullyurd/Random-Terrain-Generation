@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Spawn_LandObjects : MonoBehaviour
 {
-
-    [SerializeField] GameObject cube;
-    [SerializeField] Terrain t_terrain;
-    [SerializeField] float tresholder;
+    [SerializeField] private GameObject cube;
+    [SerializeField] private Terrain t_terrain;
+    [SerializeField] private float tresholder;
 
     private void Start()
     {
@@ -21,7 +20,6 @@ public class Spawn_LandObjects : MonoBehaviour
         var map = t.terrainData.GetDetailLayer(0, 0, t.terrainData.detailWidth, t.terrainData.detailHeight, 0);
 
         // For each pixel in the detail map...
-
 
         for (var y = 0; y < t.terrainData.detailHeight; y++)
         {

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class Landscape : MonoBehaviour
 {
-
     private void Start()
     {
         init();
